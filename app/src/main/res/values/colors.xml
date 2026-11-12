@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="material_dynamic_neutral90">#E2E2E5</color>
+    <color name="material_dynamic_neutral80">#C6C6C9</color>
+    <color name="material_dynamic_neutral50">#76777A</color>
+    <color name="error_red">#B00020</color>
+    <color name="success_green">#2E7D32</color>
+</resources>

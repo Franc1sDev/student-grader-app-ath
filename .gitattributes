@@ -1,0 +1,8 @@
+# Store text files with LF in the repository; Git converts line endings for each computer.
+* text=auto
+*.bat text eol=crlf
+gradlew text eol=lf
+*.png binary
+*.jpg binary
+*.webp binary
+*.jar binary
