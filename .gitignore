@@ -1,0 +1,41 @@
+# ---- Android / Gradle build output ----
+.gradle/
+build/
+/app/build/
+/captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+*.aab
+*.ap_
+*.dex
+output-metadata.json
+
+# ---- Local machine settings and SECRETS (never commit) ----
+local.properties
+*.jks
+*.keystore
+keystore.properties
+google-services.json
+
+# ---- Android Studio / IntelliJ personal settings ----
+*.iml
+.idea/caches/
+.idea/libraries/
+.idea/modules.xml
+.idea/workspace.xml
+.idea/navEditor.xml
+.idea/assetWizardSettings.xml
+.idea/deploymentTargetSelector.xml
+.idea/deviceManager.xml
+.idea/claudeCodeTabState.xml
+.idea/shelf/
+.idea/AndroidProjectSystem.xml
+
+# ---- OS files ----
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- Logs ----
+*.log
