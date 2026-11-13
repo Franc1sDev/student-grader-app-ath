@@ -67,8 +67,8 @@ It still works, just not as smoothly:
 
 ## 4. Optional: nicer emails
 
-**Authentication → Templates** lets you edit the sender name, the subject (e.g. *"Activate your Student
-Grader account"*) and the text of the *Email address verification* and *Password reset* emails.
+**Authentication → Templates** lets you edit the sender name, the subject (e.g. *"Activate your Tally
+account"*) and the text of the *Email address verification* and *Password reset* emails.
 **Don't change the action URL.** The app listens for the default `/__/auth/action` link.
 
 Firebase emails sometimes land in **spam** at first. Ask lecturers to check there.
