@@ -1,6 +1,6 @@
-# Student Grader App (ATH)
+# Tally
 
-An Android app (Java, XML layouts) for lecturers to record students' marks, grade them and produce class reports.
+**Tally** is an Android app (Java, XML layouts) for lecturers to record students' marks, grade them and produce class reports.
 It is the worked example for **DICT 229 Mobile Programming** at Daystar University (Athi River class).
 
 ## Features
@@ -30,7 +30,7 @@ It is the worked example for **DICT 229 Mobile Programming** at Daystar Universi
 
 ## Data
 
-All app data is stored on the phone in **SQLite** (`student_grader.db`, see `DatabaseHelper.java`):
+All app data is stored on the phone in **SQLite** (`tally.db`, see `DatabaseHelper.java`):
 `lecturers`, `students`, `subjects`, `marks` and `results`. Firebase is only used to send and check the emails.
 
 ## Getting started

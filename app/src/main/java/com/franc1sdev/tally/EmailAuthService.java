@@ -1,4 +1,4 @@
-package com.example.myfirstappath;
+package com.franc1sdev.tally;
 
 import org.json.JSONException;
 import org.json.JSONObject;

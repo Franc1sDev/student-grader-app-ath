@@ -1,4 +1,4 @@
-package com.example.myfirstappath;//project identity
+package com.franc1sdev.tally;//project identity
 
 import android.content.Intent;
 import android.os.Bundle;

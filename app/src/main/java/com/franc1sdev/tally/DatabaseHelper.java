@@ -1,4 +1,4 @@
-package com.example.myfirstappath;
+package com.franc1sdev.tally;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -12,7 +12,7 @@ import java.util.Collections;
 import java.util.List;
 
 /*
- SQLite database for the Student Grader App.
+ SQLite database for Tally.
 
  TABLES AND RELATIONSHIPS:
 
@@ -38,7 +38,7 @@ import java.util.List;
 */
 public class DatabaseHelper extends SQLiteOpenHelper {
 
-    private static final String DATABASE_NAME = "student_grader.db";
+    private static final String DATABASE_NAME = "tally.db";
     private static final int DATABASE_VERSION = 2;
 
     // Table and column names

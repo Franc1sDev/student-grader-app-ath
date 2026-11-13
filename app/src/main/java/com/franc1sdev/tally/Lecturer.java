@@ -1,4 +1,4 @@
-package com.example.myfirstappath;
+package com.franc1sdev.tally;
 
 /** One lecturer account as read from the database. */
 public class Lecturer {

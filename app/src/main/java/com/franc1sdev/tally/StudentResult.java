@@ -1,4 +1,4 @@
-package com.example.myfirstappath;
+package com.franc1sdev.tally;
 
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
