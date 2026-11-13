@@ -1,4 +1,4 @@
-package com.example.myfirstappath;
+package com.franc1sdev.tally;
 
 import android.app.Activity;
 import android.content.Intent;

@@ -7,7 +7,7 @@ plugins {
 // Email service settings (Firebase Authentication) are read from local.properties, which is NOT committed.
 // See EMAIL_SETUP.md in the project root. Example:
 //   firebase.apiKey=AIzaSy...
-//   firebase.authDomain=student-grader-1234.firebaseapp.com
+//   firebase.authDomain=tally-1234.firebaseapp.com
 val localProperties = Properties().apply {
     val file = rootProject.file("local.properties")
     if (file.exists()) file.inputStream().use { load(it) }
@@ -16,13 +16,13 @@ val firebaseApiKey: String = localProperties.getProperty("firebase.apiKey", "").
 val firebaseAuthDomain: String = localProperties.getProperty("firebase.authDomain", "").trim()
 
 android {
-    namespace = "com.example.myfirstappath"
+    namespace = "com.franc1sdev.tally"
     compileSdk {
         version = release(37)
     }
 
     defaultConfig {
-        applicationId = "com.example.myfirstappath"
+        applicationId = "com.franc1sdev.tally"
         minSdk = 28
         targetSdk = 37
         versionCode = 1

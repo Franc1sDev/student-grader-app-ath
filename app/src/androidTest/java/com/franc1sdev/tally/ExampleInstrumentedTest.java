@@ -1,4 +1,4 @@
-package com.example.myfirstappath;
+package com.franc1sdev.tally;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("com.example.myfirstappath", appContext.getPackageName());
+        assertEquals("com.franc1sdev.tally", appContext.getPackageName());
     }
 }

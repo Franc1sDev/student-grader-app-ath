@@ -64,7 +64,7 @@
                     android:layout_height="wrap_content"
                     android:background="@android:color/holo_green_dark"
                     android:textSize="30sp"
-                    android:text="Grader Report"
+                    android:text="Tally Report"
                     android:textAlignment="center"
                     android:textColor="@color/white">
 

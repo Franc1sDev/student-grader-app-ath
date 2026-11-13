@@ -20,7 +20,7 @@ Until you do the setup below:
 2. **Build → Authentication → Get started → Sign-in method → Email/Password → Enable → Save.**
 3. **Project settings (gear icon) → General**. Write down:
    - **Web API Key**, e.g. `AIzaSy...`
-   - **Project ID**, e.g. `student-grader-1234`. Your link domain is then `student-grader-1234.firebaseapp.com`.
+   - **Project ID**, e.g. `tally-1234`. Your link domain is then `tally-1234.firebaseapp.com`.
 
 ## 2. Tell the app about it
 
@@ -28,7 +28,7 @@ Add these two lines to `local.properties` in the project root. That file is not 
 
 ```properties
 firebase.apiKey=AIzaSy...your key...
-firebase.authDomain=student-grader-1234.firebaseapp.com
+firebase.authDomain=tally-1234.firebaseapp.com
 ```
 
 Then **Sync Gradle** and rebuild/reinstall the app.
@@ -36,24 +36,24 @@ Then **Sync Gradle** and rebuild/reinstall the app.
 ## 3. Make the email links open the app (Android App Links)
 
 The links in the emails look like
-`https://student-grader-1234.firebaseapp.com/__/auth/action?mode=verifyEmail&oobCode=...`.
+`https://tally-1234.firebaseapp.com/__/auth/action?mode=verifyEmail&oobCode=...`.
 Android only opens them in the app, rather than the browser, once the domain is verified for the app:
 
 1. Get your signing certificate's **SHA-256**: in Android Studio's terminal run `./gradlew signingReport`
    and copy the `SHA-256` of the `debug` variant (and the release one when you publish).
 2. Firebase console → **Project settings → General → Your apps → Add app → Android**:
-   - Package name: `com.example.myfirstappath`
+   - Package name: `com.franc1sdev.tally`
    - Add the **SHA-256** fingerprint(s) (*Add fingerprint*).
 3. Check that `https://<your-project-id>.firebaseapp.com/.well-known/assetlinks.json` lists
-   `com.example.myfirstappath` with your SHA-256. Then reinstall the app so Android re-verifies the domain.
+   `com.franc1sdev.tally` with your SHA-256. Then reinstall the app so Android re-verifies the domain.
    On a connected phone you can check with:
-   `adb shell pm get-app-links com.example.myfirstappath` (the domain should say `verified`).
+   `adb shell pm get-app-links com.franc1sdev.tally` (the domain should say `verified`).
 
-**Quick option for testing:** on the phone, open **Settings → Apps → myfirstApp(ATH) → Open by default →
+**Quick option for testing:** on the phone, open **Settings → Apps → Tally → Open by default →
 Add link** and tick your `firebaseapp.com` domain. Or run:
 
 ```
-adb shell pm set-app-links-user-selection --user cur --package com.example.myfirstappath true student-grader-1234.firebaseapp.com
+adb shell pm set-app-links-user-selection --user cur --package com.franc1sdev.tally true tally-1234.firebaseapp.com
 ```
 
 ### If a link opens in the browser anyway

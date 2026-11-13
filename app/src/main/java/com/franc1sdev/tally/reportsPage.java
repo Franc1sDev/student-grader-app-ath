@@ -1,4 +1,4 @@
-package com.example.myfirstappath;
+package com.franc1sdev.tally;
 
 import android.Manifest;
 import android.content.ActivityNotFoundException;
@@ -308,7 +308,7 @@ public class reportsPage extends AppCompatActivity {
         List<StudentResult> byAdmno = new ArrayList<>(students);
         Collections.sort(byAdmno, comparatorFor(COL_ADMNO, true));
 
-        String fileName = "Student_Report_"
+        String fileName = "Tally_Report_"
                 + new SimpleDateFormat("yyyyMMdd_HHmmss", Locale.US).format(new Date()) + ".pdf";
 
         PdfDocument pdf = buildPdf(byAdmno);
@@ -404,7 +404,7 @@ public class reportsPage extends AppCompatActivity {
             int y = margin;
 
             if (pageNumber == 1) {
-                canvas.drawText("Student Grader Report", margin, y + 14, titlePaint);
+                canvas.drawText("Tally Report", margin, y + 14, titlePaint);
                 y += 30;
                 canvas.drawText("Generated " + generated + "   |   " + selectedTrimester + "   |   "
                                 + rows.size() + " result(s)   |   Sorted by Admno (ascending)",

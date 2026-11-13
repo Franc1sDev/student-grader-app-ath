@@ -22,6 +22,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "myfirstApp(ATH)"
+rootProject.name = "Tally"
 include(":app")
  
